@@ -1,0 +1,22 @@
+{
+  "name": "system-stats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "build": "pkg package.json --options unhandled-rejections=none -t node18-linux-x64"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/**/*"
+    ]
+  },
+  "author": "fydne",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "mongoose": "^7.4.2",
+    "systeminformation": "^5.7.4"
+  }
+}
